@@ -368,3 +368,4 @@ D:\Projects\PingPongApi\PingPongAPI\obj\Release\netcoreapp3.1\win-x64\PingPongAP
 D:\Projects\PingPongApi\PingPongAPI\obj\Release\netcoreapp3.1\win-x64\PingPongAPI.csproj.CopyComplete
 D:\Projects\PingPongApi\PingPongAPI\obj\Release\netcoreapp3.1\win-x64\PingPongAPI.dll
 D:\Projects\PingPongApi\PingPongAPI\obj\Release\netcoreapp3.1\win-x64\PingPongAPI.pdb
+D:\Projects\PingPongApi\PingPongAPI\bin\Release\netcoreapp3.1\win-x64\index.html

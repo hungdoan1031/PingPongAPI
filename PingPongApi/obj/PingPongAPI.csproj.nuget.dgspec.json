@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\PingPongApi\\PingPongAPI\\PingPongAPI.csproj": {}
+    "d:\\Projects\\PingPongApi\\PingPongAPI\\PingPongAPI.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\PingPongApi\\PingPongAPI\\PingPongAPI.csproj": {
+    "d:\\Projects\\PingPongApi\\PingPongAPI\\PingPongAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\PingPongApi\\PingPongAPI\\PingPongAPI.csproj",
+        "projectUniqueName": "d:\\Projects\\PingPongApi\\PingPongAPI\\PingPongAPI.csproj",
         "projectName": "PingPongAPI",
-        "projectPath": "D:\\Projects\\PingPongApi\\PingPongAPI\\PingPongAPI.csproj",
+        "projectPath": "d:\\Projects\\PingPongApi\\PingPongAPI\\PingPongAPI.csproj",
         "packagesPath": "C:\\Users\\Hung Doan\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\PingPongApi\\PingPongAPI\\obj\\",
+        "outputPath": "d:\\Projects\\PingPongApi\\PingPongAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -16,3 +16,4 @@ D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.Assembly
 D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.RazorTargetAssemblyInfo.cache
 D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.dll
 D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.pdb
+d:\Projects\PingPongApi\PingPongAPI\bin\Debug\netcoreapp3.1\index.html

@@ -22,7 +22,6 @@ namespace PingPongAPI
                 {
                     webBuilder
                     .UseStartup<Startup>()
-                    .UseKestrel()
                     .UseIISIntegration();
                 });
     }
