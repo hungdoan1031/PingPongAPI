@@ -22,4 +22,8 @@ Thumbs.db
 !*.dll
 *.lib
 *.sbr
-.vs/
+.vs/*
+PingPongAPI/bin
+PingPongAPI/bin/*
+/bin
+PingPongAPI/obj
