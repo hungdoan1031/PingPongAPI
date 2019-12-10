@@ -98,6 +98,28 @@ namespace PingPongAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<TeamMember>> PostTeamMember(TeamMember teamMember)
         {
+            // If the team member is not assigned to any team, the pick a team for them 
+            // (choose the team with the least number of members
+            if (string.IsNullOrWhiteSpace(teamMember.TeamId))
+            {
+                var teams = _context.Teams.Include(t => t.TeamMembers);
+                var minTeamId = "";
+                var minMembers = int.MaxValue;
+                foreach(var team in teams)
+                {
+                    var memberQty = team.TeamMembers.Count();
+                    if (memberQty < minMembers)
+                    {
+                        minMembers = memberQty;
+                        minTeamId = team.Id;
+                    }
+                }
+
+                teamMember.TeamId = minTeamId;
+            }
+
+
+
             _context.TeamMembers.Add(teamMember);
             try
             {
