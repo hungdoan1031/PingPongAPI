@@ -471,3 +471,5 @@ D:\Projects\PingPongApi\PingPongAPI\bin\Debug\netcoreapp3.1\win-x64\System.Confi
 D:\Projects\PingPongApi\PingPongAPI\bin\Debug\netcoreapp3.1\win-x64\System.Runtime.Caching.dll
 D:\Projects\PingPongApi\PingPongAPI\bin\Debug\netcoreapp3.1\win-x64\System.Security.Cryptography.ProtectedData.dll
 D:\Projects\PingPongApi\PingPongAPI\bin\Debug\netcoreapp3.1\win-x64\sni.dll
+D:\Projects\PingPongApi\PingPongAPI\bin\Debug\netcoreapp3.1\win-x64\PingPongAPI.xml
+D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\win-x64\PingPongAPI.xml
