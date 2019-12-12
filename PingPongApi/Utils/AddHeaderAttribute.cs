@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PingPongAPI.Utils
 {
+    /// <summary>
+    /// Add a custom header to the response
+    /// </summary>
     public class AddHeaderAttribute : ResultFilterAttribute
     {
         private readonly string _name;
