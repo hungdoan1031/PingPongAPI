@@ -33,11 +33,11 @@ namespace PingPongAPI.Utils
 
             modelBuilder.Entity<ShirtSize>().HasData(
                 new { Id = "XS", Name = "XS" , Order = 0},
-                new { Id = "S", Name = "S", Order = 0 },
-                new { Id = "M", Name = "M", Order = 0 },
-                new { Id = "L", Name = "L", Order = 0 },
-                new { Id = "XL", Name = "XL", Order = 0 },
-                new { Id = "XXL", Name = "XXL", Order = 0 }
+                new { Id = "S", Name = "S", Order = 1 },
+                new { Id = "M", Name = "M", Order = 2 },
+                new { Id = "L", Name = "L", Order = 3 },
+                new { Id = "XL", Name = "XL", Order = 4 },
+                new { Id = "XXL", Name = "XXL", Order = 5 }
             );
 
             modelBuilder.Entity<Team>().HasData(
