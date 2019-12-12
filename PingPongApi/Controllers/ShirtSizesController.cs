@@ -24,13 +24,13 @@ namespace PingPongAPI.Controllers
         }
 
         /// <summary>
-        /// Get all shirt sizes
+        /// Get all shirt sizes ordered by 'Order'
         /// </summary>
         /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ShirtSize>>> GetshirtSizes()
         {
-            return await _context.ShirtSizes.ToListAsync();
+            return await _context.ShirtSizes.OrderBy(s => s.Order).ToListAsync();
         }
 
 
@@ -55,7 +55,7 @@ namespace PingPongAPI.Controllers
         /// <summary>
         /// Update a shirt size
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">shirt size id</param>
         /// <param name="shirtSize"></param>
         /// <returns></returns>
         [HttpPut("{id}")]

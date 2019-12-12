@@ -98,27 +98,13 @@ namespace PingPongAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<TeamMember>> PostTeamMember(TeamMember teamMember)
         {
-            // If the team member is not assigned to any team, the pick a team for them 
-            // (choose the team with the least number of members
+     
+            // Assign the team member to a team if there isn't a selected team
             if (string.IsNullOrWhiteSpace(teamMember.TeamId))
             {
                 var teams = _context.Teams.Include(t => t.TeamMembers);
-                var minTeamId = "";
-                var minMembers = int.MaxValue;
-                foreach(var team in teams)
-                {
-                    var memberQty = team.TeamMembers.Count();
-                    if (memberQty < minMembers)
-                    {
-                        minMembers = memberQty;
-                        minTeamId = team.Id;
-                    }
-                }
-
-                teamMember.TeamId = minTeamId;
+                teamMember.TeamId = GetAssignedTeamId(teams);
             }
-
-
 
             _context.TeamMembers.Add(teamMember);
             try
@@ -138,6 +124,32 @@ namespace PingPongAPI.Controllers
             }
 
             return CreatedAtAction("GetTeamMember", new { id = teamMember.Id }, teamMember);
+        }
+
+        /// <summary>
+        /// Find a team that accept new member
+        /// </summary>
+        /// <param name="teams"></param>
+        /// <returns></returns>
+        private string GetAssignedTeamId(IEnumerable<Team> teams) 
+        {
+            
+            var minTeamId = "";
+            var minMembers = int.MaxValue;
+
+            // If the team member is not assigned to any team, the pick a team for them 
+            // (choose the team with the least number of members
+            foreach (var team in teams)
+            {
+                var memberQty = team.TeamMembers.Count();
+                if (memberQty < minMembers)
+                {
+                    minMembers = memberQty;
+                    minTeamId = team.Id;
+                }
+            }
+
+            return minTeamId;
         }
 
         /// <summary>

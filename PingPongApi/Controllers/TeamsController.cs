@@ -57,8 +57,8 @@ namespace PingPongAPI.Controllers
         /// <summary>
         /// Update a team
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="team"></param>
+        /// <param name="id">team id</param>
+        /// <param name="team">team info</param>
         /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTeam(string id, Team team)
@@ -92,7 +92,7 @@ namespace PingPongAPI.Controllers
         /// <summary>
         /// Create a team
         /// </summary>
-        /// <param name="team"></param>
+        /// <param name="team">team info</param>
         /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<Team>> PostTeam(Team team)
@@ -120,7 +120,7 @@ namespace PingPongAPI.Controllers
         /// <summary>
         /// Delete a team
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">team id</param>
         /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<ActionResult<Team>> DeleteTeam(string id)
