@@ -24,7 +24,7 @@ namespace PingPongAPI.Controllers
         }
 
         /// <summary>
-        /// Get all shirt sizes ordered by 'Order'
+        /// Get all shirt sizes ordered by 'Order' test Jenkins
         /// </summary>
         /// <returns></returns>
         [HttpGet]
