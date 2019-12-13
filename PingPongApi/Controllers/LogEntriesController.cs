@@ -32,6 +32,19 @@ namespace PingPongAPI.Controllers
             return await _context.LogEntries.ToListAsync();
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<LogEntry>> GetLogEntry(string id)
+        {
+            var logEntry = await _context.LogEntries.FindAsync(id);
+
+            if (logEntry == null)
+            {
+                return NotFound();
+            }
+
+            return logEntry;
+        }
+
         /// <summary>
         /// Get all Log Entries of a date
         /// </summary>

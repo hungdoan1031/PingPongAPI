@@ -136,7 +136,6 @@ D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.RazorTar
 D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.csproj.CopyComplete
 D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.dll
 D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.pdb
-D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.csprojAssemblyReference.cache
 D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.MvcApplicationPartsAssemblyInfo.cs
 D:\Projects\PingPongApi\PingPongAPI\obj\Debug\netcoreapp3.1\PingPongAPI.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\PingPongApi\PingPongAPI\bin\Debug\netcoreapp3.1\PingPongAPI.xml
