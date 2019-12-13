@@ -14,6 +14,8 @@ namespace PingPongAPI.Utils
         public DbSet<TeamMember> TeamMembers { get; set; }
         public DbSet<ShirtSize> ShirtSizes { get; set; }
         public DbSet<Team> Teams { get; set; }
+        public DbSet<LogEntry> LogEntries { get; set;}
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
